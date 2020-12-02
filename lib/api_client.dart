@@ -18,7 +18,7 @@ class ApiClient {
   final _regList = RegExp(r'^List<(.*)>$');
   final _regMap = RegExp(r'^Map<String,(.*)>$');
 
-  ApiClient({this.basePath = "https://thalia.nu"}) {
+  ApiClient({this.basePath = "https://staging.thalia.nu"}) {
     // Setup authentications (key: authentication name, value: authentication).
     _authentications['oauth2'] = OAuth();
   }
